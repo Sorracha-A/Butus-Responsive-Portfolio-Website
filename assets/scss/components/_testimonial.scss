@@ -1,0 +1,63 @@
+/*=============== TESTIMONIAL ===============*/
+.testimonial{
+    position: relative;
+
+    &__content{
+        text-align: center;
+    }
+    &__description{
+        font-family: var(--title-font);
+        color: var(--title-color);
+        margin-bottom: 1.5rem;
+    }
+    &__name{
+        font-family: var(--body-font);
+        font-size: var(--small-font-size);
+        margin-bottom: .25rem;
+    }
+    &__subtitle{
+        font-size: var(--smaller-font-size);
+        color: var(--text-color-light);
+    }
+    &__img{
+        width: 70px;
+        transform: rotate(30deg);
+        position: absolute;
+        top: 5rem;
+        right: -1.5rem;
+        opacity: .1;
+    }
+}
+
+/* Swiper class */
+.testimonial__container .swiper-slide{
+    margin-bottom: 4rem;
+}
+
+.testimonial__container .swiper-button-prev:after,
+.testimonial__container .swiper-button-next:after {
+    content: '';
+}
+
+.testimonial__container .swiper-button-next,
+.testimonial__container .swiper-button-prev{
+    font-size: 2rem;
+    color: var(--title-color);
+    width: initial;
+    height: initial;
+    top: initial;
+    bottom: .5rem;
+}
+
+.testimonial__container .swiper-button-prev{
+    left: calc(50% - 3rem);
+}
+
+.testimonial__container .swiper-button-next{
+    right: calc(50% - 3rem);
+}
+
+.testimonial__container .swiper-button-disabled{
+    opacity: initial;
+    color: var(--text-color-light);
+}

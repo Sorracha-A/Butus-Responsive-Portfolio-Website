@@ -1,0 +1,97 @@
+/*=============== HOME ===============*/
+.home{
+    &__container{
+        row-gap: 4rem;
+        padding-top: 2rem;
+    }
+    &__data{
+        row-gap: 1.5rem;
+    }
+    &__title{
+        text-align: center;
+        font-size: var(--biggest-font-size);
+        letter-spacing: .3px;
+        margin-bottom: .5rem;
+    }
+    &__blob{
+        position: relative;
+        width: 200px;
+        height: 290px;
+        background-color: var(--body-color);
+        border: 2px solid var(--text-color-light);
+        justify-self: center;
+        border-radius: 6.25rem;
+        place-items: center;
+        transition: background .4s; /* for dark mode animation */
+    }
+    &__perfil{
+        width: 170px;
+        height: 260px;
+        background: var(--gradient-color);
+        border-radius: 5.5rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        & img{
+            width: 150px;
+        }
+    }
+    &__shape-wawes,
+    &__shape-circle{
+        position: absolute;
+        opacity: .1;
+    }
+    &__shape-wawes{
+        width: 50px;
+        left: -1.5rem;
+        top: 5rem;
+    }
+    &__shape-circle{
+        width: 150px;
+        bottom: -2rem;
+        right: -3rem;
+        transform: rotate(15deg);
+        z-index: -1;
+    }
+    &__social{
+        justify-self: center;
+        display: flex;
+        column-gap: 1.25rem;
+
+        &-link{
+            font-size: 1.25rem;
+            color: var(--text-color-light);
+            transition: color .3s;
+
+            &:hover{
+                color: var(--title-color);
+            }
+        }
+    }
+    &__info{
+        display: grid;
+        row-gap: 2rem;
+
+        &-title{
+            font-family: var(--body-font);
+            font-size: var(--smaller-font-size);
+            font-weight: 400;
+            color: var(--text-color-light);
+            margin-bottom: 1rem;
+        }
+        &-description,
+        &-number{
+            font-family: var(--title-font);
+            color: var(--title-color);
+        }
+        &-description{
+            padding-right: 4rem;
+        }
+        &-number{
+            font-size: var(--h1-font-size);
+            font-weight: var(--font-semi-bold);
+        }
+    }
+}
