@@ -754,6 +754,10 @@ body.dark-theme {
 }
 
 /*=============== CONTACT ===============*/
+.contact__content{
+  margin-left: 8rem;
+}
+
 .contact__container {
   row-gap: 3.5rem;
 }
@@ -1364,5 +1368,7 @@ body.dark-theme {
 
 
   }
+
+
 
 
