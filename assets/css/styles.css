@@ -757,6 +757,9 @@ body.dark-theme {
 .contact__content{
   margin-left: 8rem;
 }
+#writebox{
+  display: none;
+}
 
 .contact__container {
   row-gap: 3.5rem;
