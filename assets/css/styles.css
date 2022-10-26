@@ -88,6 +88,12 @@ ul {
 
 a {
   text-decoration: none;
+  
+}
+
+.igcontact, .igcontact:active, .igcontact:visited {
+  color: var(--title-color);
+
 }
 
 img {
@@ -292,6 +298,8 @@ body.dark-theme {
 .active-link {
   color: var(--title-color);
 }
+
+
 
 /*=============== HOME ===============*/
 .home__container {
