@@ -1358,6 +1358,10 @@ body.dark-theme {
   .footer__copy {
     margin-top: 5rem;
   }
+  #MongoDB_Logo img{
+    width: 95px;
+    height: 95px;
+    }
 
   #python-logo{
     width: 58px;
